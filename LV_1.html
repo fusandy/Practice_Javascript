@@ -10,24 +10,37 @@
         
     <script>
         // 請你分別用 for loop 以及 while 迴圈，印出 1~9
-            // for(i=1;i<10;i++){
-            //     console.log(i);
-            // }
+            for(i=1;i<10;i++){
+                console.log(i);
+            }
 
         // 請寫一個函式叫做 print，接收一個是數字的參數 n，並且印出 1~n
-            // function print(n){
-            //     for(i=1;i<=n;i++){
-            //         console.log(i);
-            //     }
-            // }
-            // print(10);
+            function print(n){
+                for(i=1;i<=n;i++){
+                    console.log(i);
+                }
+            }
+            print(10);
 
         // 寫一個函式 star，接收一個參數 n，並印出 n 個 *
-                function star(n){
-                    console.log('*'*n)    
+            let str = '';
+            function star(n){
+                for(i=1;i<=n;i++){
+                    str += '*' ; 
                 }
-                star(10);
-                
+                console.log(str);
+            }
+            star(10);
+
+        // 請寫出一個叫做 starReturn 的 function 並且接受一個參數 n，能回傳 n 個 *
+            function starReturn(n){
+                let str = '';
+                for(i=1;i<=n;i++){
+                    str += '*' ; 
+                }
+                return str; 
+            }
+            console.log(starReturn(8));
 
 
     </script>
